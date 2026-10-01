@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Local environment secrets
+.env
+
+# Test and tool caches
+.pytest_cache/
+.ruff_cache/
+
+# Editor and system files
+.DS_Store
+.vscode/
+.idea/
