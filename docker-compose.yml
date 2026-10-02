@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: traceiq-postgres
+
+    environment:
+      POSTGRES_USER: traceiq
+      POSTGRES_PASSWORD: traceiq
+      POSTGRES_DB: traceiq
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - traceiq_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  traceiq_postgres_data:
